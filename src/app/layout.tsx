@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
+import { Auth0Provider } from "@auth0/nextjs-auth0/client";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,9 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Auth0Provider>
       <body>
+        <Header></Header>
         {children}
       </body>
+      </Auth0Provider>
     </html>
   );
 }
