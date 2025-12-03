@@ -47,8 +47,7 @@ export default function Home() {
 				>
 					<Link
 						className="bg-primary border-transparent border-4 text-[#edece1] p-2 rounded-2xl transition duration-500 hover:border-white"
-						href="/destinations"
-					>
+						href="/destinations">
 						Discover your next adventure
 					</Link>
 				</Box>
