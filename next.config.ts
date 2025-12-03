@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [new URL('https://www.lonestar.edu/images/internationalTravel.jpg')],
+  },
 };
 
 export default nextConfig;
