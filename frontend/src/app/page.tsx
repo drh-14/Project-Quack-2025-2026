@@ -2,10 +2,12 @@
 import Box from "@mui/material/Box";
 import Link from "next/link";
 import TypingAnimation from "./components/typeanimation";
+import Navbar from "./components/navbar";
 
 export default function Home() {
 	return (
 		<div className="flex flex-col justify-center items-center h-screen w-screen">
+			<Navbar />
 			<TypingAnimation />
 			<Box
 				component="div"
