@@ -1,4 +1,4 @@
-import Link from "../../../frontend/node_modules/next/link";
+import Link from "next/link";
 import FlightIcon from "@mui/icons-material/Flight";
 import LoginIcon from '@mui/icons-material/Login';
 
